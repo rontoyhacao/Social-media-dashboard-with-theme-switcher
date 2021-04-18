@@ -1,0 +1,139 @@
+.card-container {
+    background: $Dark-Desaturated-Blue;
+    border-radius: .5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 2rem 2rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    .username-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__username {
+            color: $Desaturated-Blue;
+            font-weight: 700;
+            font-size: .88rem;
+        }
+        svg {
+            margin-right: .5rem;
+        }
+    }
+    .counter-container {
+        margin: 1rem 0;
+        span {
+            display: block;
+        }
+        &__counter {
+            color: $White;
+            font-weight: 700;
+            font-size: 3.5rem;
+        }
+        &__label {
+            color: $Desaturated-Blue;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+        }
+    }
+}
+.rate {
+    color: $White;
+    font-weight: 700;
+    font-size: .88rem;
+}
+.up-rate {
+    color: $Lime-Green;
+    &::before {
+        content: url(/assets/images/icon-up.svg);
+        margin-right: .5rem;
+        position: relative;
+        top: -0.125rem;
+    }
+}
+.down-rate {
+    color: $Bright-Red;
+    &::before {
+        content: url(/assets/images/icon-down.svg);
+        margin-right: .5rem;
+        position: relative;
+        top: -0.125rem;
+    }
+}
+.card-container--facebook {
+    &::after {
+        content: '';
+        height: 0.25rem;
+        background: $Facebook;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+    }
+    .rate::before {
+        content: url(/assets/images/icon-up.svg);
+        margin-right: .5rem;
+        position: relative;
+        top: -0.125rem;
+    }
+}
+.card-container--twitter {
+    &::after {
+        content: '';
+        height: 0.25rem;
+        background: $Twitter;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+    }
+}
+.card-container--instagram {
+    &::after {
+        content: '';
+        height: 0.25rem;
+        background: $Instagram;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+    }
+}
+.card-container--youtube {
+    &::after {
+        content: '';
+        height: 0.25rem;
+        background: $YouTube;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+    }
+}
+.card-container--overview {
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1rem;
+    .label-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.25rem;
+        &__label {
+            color: $Desaturated-Blue;
+            font-weight: 700;
+            font-size: .88rem;
+        }
+    }
+    .stats-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        &__stat {
+            color: $White;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+    &:last-of-type {
+        margin: 0;
+    }
+}

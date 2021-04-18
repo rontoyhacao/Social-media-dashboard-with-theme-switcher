@@ -1,0 +1,28 @@
+@import './variables';
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: $Very-Dark-Blue;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.wide-container {
+    width: 88%;
+    margin: 0 auto;
+    max-width: 70rem;
+}
+
+h1,
+h2 {
+    color: $White;
+}

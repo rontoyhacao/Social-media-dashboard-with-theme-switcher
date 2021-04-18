@@ -1,0 +1,28 @@
+header {
+    padding: 2.25rem 0 5rem;
+    background: $Very-Dark-Blue2;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    .header-container {
+        span {
+            color: $Desaturated-Blue;
+            font-weight: 700;
+            font-size: .88rem;
+        }
+        &__upper {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $Dark-Grayish-Blue;
+            h1 {
+                font-size: 1.5rem;
+            }
+            span {
+                line-height: 2;
+            }
+        }
+        .dark-toggle {
+            display: flex;
+            justify-content: space-between;
+            margin: 1.25rem 0;
+        }
+    }
+}
