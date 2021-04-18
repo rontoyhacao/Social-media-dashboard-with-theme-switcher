@@ -63,14 +63,63 @@ header .header-container__upper span {
   line-height: 2;
 }
 
-header .header-container .dark-toggle {
+header .header-container .toggle {
+  margin: 1rem 0;
+  position: relative;
+  width: 100%;
+  height: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 1.25rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8b97c6;
+  font-weight: 700;
+  font-size: .88rem;
+}
+
+header .header-container .toggle input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+header .header-container .toggle .slider {
+  position: absolute;
+  width: 3rem;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1.375rem;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .header-container .toggle .slider:focus {
+  outline: 0.1875rem auto #3eda82;
+}
+
+header .header-container .slider::before {
+  position: absolute;
+  content: '';
+  height: 1.15rem;
+  width: 1.15rem;
+  left: 0.1875rem;
+  bottom: 0.1875rem;
+  background-color: #252a41;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .header-container input:checked + .slider:before {
+  -webkit-transform: translateX(1.375rem);
+          transform: translateX(1.375rem);
+  background-color: white;
 }
 
 .card-container {
