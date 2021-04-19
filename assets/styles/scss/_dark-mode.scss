@@ -1,0 +1,36 @@
+.dark-mode {
+    background: $Very-Dark-Blue;
+    h1,
+    h2 {
+        color: $White;
+    }
+    header {
+        background: $Very-Dark-Blue2;
+        .header-container span {
+            color: $Desaturated-Blue;
+        }
+        .toggle {
+            color: $Desaturated-Blue;
+        }
+    }
+    .card-container {
+        background: $Dark-Desaturated-Blue;
+        .username-container__username {
+            color: $Desaturated-Blue;
+        }
+        .counter-container {
+            &__counter {
+                color: $White;
+            }
+            &__label {
+                color: $Desaturated-Blue;
+            }
+        }
+        .label-container__label {
+            color: $Desaturated-Blue;
+        }
+        .stats-container__stat {
+            color: $White;
+        }
+    }
+}

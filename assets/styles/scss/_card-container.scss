@@ -1,5 +1,5 @@
 .card-container {
-    background: $Dark-Desaturated-Blue;
+    background: $Light-Grayish-Blue;
     border-radius: .5rem;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -11,7 +11,7 @@
         align-items: center;
         justify-content: center;
         &__username {
-            color: $Desaturated-Blue;
+            color: $Dark-Grayish-Blue;
             font-weight: 700;
             font-size: .88rem;
         }
@@ -25,12 +25,12 @@
             display: block;
         }
         &__counter {
-            color: $White;
+            color: $Very-Dark-Blue3;
             font-weight: 700;
             font-size: 3.5rem;
         }
         &__label {
-            color: $Desaturated-Blue;
+            color: $Dark-Grayish-Blue;
             letter-spacing: .2em;
             text-transform: uppercase;
         }
@@ -118,7 +118,7 @@
         align-items: center;
         margin-bottom: 1.25rem;
         &__label {
-            color: $Desaturated-Blue;
+            color: $Dark-Grayish-Blue;
             font-weight: 700;
             font-size: .88rem;
         }
@@ -128,7 +128,7 @@
         justify-content: space-between;
         align-items: flex-end;
         &__stat {
-            color: $White;
+            color: $Very-Dark-Blue3;
             font-size: 2rem;
             font-weight: 700;
         }
