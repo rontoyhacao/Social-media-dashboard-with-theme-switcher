@@ -3,7 +3,7 @@ header {
     background: $Very-Pale-Blue;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    transition: 1s;
+    transition: background .5s;
     .header-container {
         span {
             color: $Dark-Grayish-Blue;

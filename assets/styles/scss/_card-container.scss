@@ -6,6 +6,8 @@
     padding: 2rem 2rem 1.5rem;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    transition: background .3s;
     .username-container {
         display: flex;
         align-items: center;
@@ -34,6 +36,9 @@
             letter-spacing: .2em;
             text-transform: uppercase;
         }
+    }
+    &:hover {
+        background: #e1e5f4;
     }
 }
 .rate {

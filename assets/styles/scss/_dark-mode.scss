@@ -32,5 +32,11 @@
         .stats-container__stat {
             color: $White;
         }
+        &:hover {
+            background: #303755;
+        }
+    }
+    .attribution {
+        color: $White;
     }
 }

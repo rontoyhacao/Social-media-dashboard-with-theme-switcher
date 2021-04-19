@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 .attribution {
-  font-size: 11px;
+  font-size: .88rem;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .attribution a {
   color: #3e52a3;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 *,
@@ -20,8 +23,8 @@
 
 body {
   background: white;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: background .7s;
+  transition: background .7s;
 }
 
 .wrapper {
@@ -44,8 +47,8 @@ header {
   background: #f5f7ff;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: background .5s;
+  transition: background .5s;
 }
 
 header .header-container span {
@@ -75,6 +78,9 @@ header .header-container__upper span {
   padding: 2rem 2rem 1.5rem;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 
 .card-container .username-container {
@@ -117,6 +123,10 @@ header .header-container__upper span {
   color: #63687e;
   letter-spacing: .2em;
   text-transform: uppercase;
+}
+
+.card-container:hover {
+  background: #e1e5f4;
 }
 
 .rate {
@@ -298,7 +308,7 @@ header .header-container__upper span {
   content: '';
   height: 1.15rem;
   width: 1.15rem;
-  right: 0.2rem;
+  right: 0.25rem;
   bottom: 0.1875rem;
   background-color: white;
   border-radius: 50%;
@@ -359,6 +369,14 @@ input:checked + .slider:before {
 }
 
 .dark-mode .card-container .stats-container__stat {
+  color: white;
+}
+
+.dark-mode .card-container:hover {
+  background: #303755;
+}
+
+.dark-mode .attribution {
   color: white;
 }
 /*# sourceMappingURL=styles.css.map */
