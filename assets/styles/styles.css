@@ -338,16 +338,19 @@ header .header-container__upper span {
   font-size: .88rem;
 }
 
-.toggle input {
+.toggle label {
+  cursor: pointer;
+}
+
+.toggle label input {
   width: 0;
   height: 0;
   opacity: 0;
 }
 
-.toggle .slider {
+.toggle label .slider {
   position: absolute;
   width: 3rem;
-  cursor: pointer;
   top: 0;
   right: 0;
   bottom: 0;
@@ -357,11 +360,11 @@ header .header-container__upper span {
   transition: .3s;
 }
 
-.toggle .slider:focus {
+.toggle label .slider:focus {
   outline: 0.1875rem auto #3eda82;
 }
 
-.toggle .slider::before {
+.toggle label .slider::before {
   position: absolute;
   content: '';
   height: 1.15rem;
