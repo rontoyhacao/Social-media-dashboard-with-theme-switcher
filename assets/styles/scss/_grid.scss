@@ -7,3 +7,30 @@
 .grid--lower-container {
     padding-top: 1.5rem;
 }
+
+@media screen and (min-width: 650px) {
+    .grid--upper-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        .card-container {
+            margin: 0;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .card-container {
+        margin: 0;
+    }
+    .grid--lower-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .grid--upper-container,
+    .grid--lower-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

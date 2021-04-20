@@ -37,9 +37,12 @@ body {
   max-width: 70rem;
 }
 
-h1,
-h2 {
+h1 {
   color: #1e202a;
+}
+
+h2 {
+  color: #63687e;
 }
 
 header {
@@ -68,6 +71,27 @@ header .header-container__upper h1 {
 
 header .header-container__upper span {
   line-height: 2;
+}
+
+@media screen and (min-width: 650px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-container__upper {
+    border: none !important;
+    padding: 0 !important;
+  }
+  .header-container__upper h1 {
+    font-size: 1.75rem !important;
+  }
 }
 
 .card-container {
@@ -264,6 +288,40 @@ header .header-container__upper span {
   padding-top: 1.5rem;
 }
 
+@media screen and (min-width: 650px) {
+  .grid--upper-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .grid--upper-container .card-container {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    margin: 0;
+  }
+  .grid--lower-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .grid--upper-container,
+  .grid--lower-container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .toggle {
   margin: 1rem 0;
   position: relative;
@@ -325,6 +383,12 @@ input:checked + .slider:before {
   -webkit-transform: translateX(-1.375rem);
           transform: translateX(-1.375rem);
   background-color: #252a41;
+}
+
+@media screen and (min-width: 650px) {
+  .toggle {
+    width: 9rem;
+  }
 }
 
 .dark-mode {

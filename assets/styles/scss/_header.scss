@@ -22,3 +22,17 @@ header {
         }
     }
 }
+@media screen and (min-width: 650px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__upper {
+            border: none !important;
+            padding: 0 !important;
+            h1 {
+                font-size: 1.75rem !important;
+            }
+        }
+    }
+}
